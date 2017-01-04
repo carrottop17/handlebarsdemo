@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+	<h1>Game of Thrones</h1>
+	<ul class="character-list-container">
+		
+	</ul>
+	
+	<script id="character-template" type="text/x-handlebars-template">
+		{{#each characters}}
+		<li class="character">
+			<img src="images/{{shortCode}}.jpg" alt="">
+			<h2>{{@index}} {{@first}} {{name}}</h2>
+			<p>Actor: {{actor}}</p>
+			<p>House: {{house}}</p>
+			<p>Whereabouts: {{location}}</p>
+		</li>
+		{{/each}}
+	</script>
+
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/handlebars-v4.0.5.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
+
