@@ -17,7 +17,8 @@
 			<h2>{{@index}} {{@first}} {{name}}</h2>
 			<p>Actor: {{actor}}</p>
 			<p>House: {{house}}</p>
-			<p>Whereabouts: {{location}}</p>
+			{{#if location}}<p>Whereabouts: {{location}}</p>{{/if}}
+			{{#unless location}}<p>Whereabouts are unknown...</p>{{/unless}}
 		</li>
 		{{/each}}
 	</script>

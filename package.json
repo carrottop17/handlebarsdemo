@@ -1,14 +1,25 @@
 {
   "name": "handlebardemo",
   "version": "1.0.0",
-  "description": "",
-  "main": "handlebars-demo.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
     "handlebars": "^4.0.6"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carrottop17/handlebarsdemo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/carrottop17/handlebarsdemo/issues"
+  },
+  "homepage": "https://github.com/carrottop17/handlebarsdemo#readme",
+  "description": ""
 }
