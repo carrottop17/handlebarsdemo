@@ -7,37 +7,41 @@
 			"house": {
 				"name": "Stark",
 				"seat": "Winterfell",
-				"words": "Winter is Coming",
-				"phone": 5555555555
+				"words": "Winter is Coming"
 			},
-			"location": "The Wall"
+			"location": "The Wall",
+			"phone": 5555555555
 		},
 		{
 			"name": "Tyrion Lannister",
 			"shortCode": "tyrion",
 			"actor": "Peter Dinklage",
-			"house": "Lannister"
+			"house": "Lannister",
+			"phone": 5555555555
 		},
 		{
 			"name": "Brienne of Tarth",
 			"shortCode": "brienne",
 			"actor": "Gwendoline Christie",
 			"house": "Clegane",
-			"location": false
+			"location": false,
+			"phone": 5555555555
 		},
 		{
 			"name": "Eddard Stark",
 			"shortCode": "ned-stark",
 			"actor": "Sean Bean",
 			"house": "Stark",
-			"location": "Winterfell"
+			"location": "Winterfell",
+			"phone": 5555555555
 		},
 		{
 			"name": "Sandor Clegane",
 			"shortCode": "the-hound",
 			"actor": "Rory McCann",
 			"house": "Clegane",
-			"location": false
+			"location": false,
+			"phone": 5555555555
 		}
 	]
 

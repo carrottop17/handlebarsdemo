@@ -5,6 +5,7 @@ Handlebars.registerHelper("formatName", function(property1, property2){
 });
 
 Handlebars.registerHelper("formatPhoneNumber", function(property){
+	// console.log(property);
 	var phone = property.toString();
 	// var phone = property.toString();
 	return "(" + phone.substr(0, 3) + ")" + phone.substr(3, 3) + "-" + phone.substr(6, 4);
