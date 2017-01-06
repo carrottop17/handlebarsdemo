@@ -1,3 +1,14 @@
+Handlebars.registerHelper("formatName", function(property1, property2){
+	return new Handlebars.SafeString(
+		"Hello <strong> " + property1 + " </strong> and I live at <strong>" + property2 +"</strong>"
+	);
+});
+
+Handlebars.registerHelper("formatPhoneNumber", function(property){
+	var phone = property.toString();
+	// var phone = property.toString();
+	return "(" + phone.substr(0, 3) + ")" + phone.substr(3, 3) + "-" + phone.substr(6, 4);
+});
 
 $(document).ready(function(){
 
@@ -5,19 +16,9 @@ $(document).ready(function(){
 
 	var compiledCharacterTemplate = Handlebars.compile(characterTemplate);
 
-	// console.log('ello');
+	$.getJSON("data/cast.json", function(cast) {
+	   $(".character-list-container").html(compiledCharacterTemplate(cast))
+	});
 
-	// $.ajax("./data/cast.json").done(function(cast){
-	// 	console.log("done");
-	// })
-
-	$.ajax({
-					url: "cast.json",
-					        context: document.body,
-					        success: function(){
-					           alert("done");
-	            }});
-
-	// $(".character-list-container").html(compiledCharacterTemplate(cast))
 
 });

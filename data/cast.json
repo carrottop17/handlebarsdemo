@@ -1,10 +1,15 @@
 {
-	"characters": [
+		"characters": [
 		{
 			"name": "Jon Snow",
 			"shortCode": "jon-snow",
 			"actor": "Kit Harrington",
-			"house": "Stark",
+			"house": {
+				"name": "Stark",
+				"seat": "Winterfell",
+				"words": "Winter is Coming",
+				"phone": 5555555555
+			},
 			"location": "The Wall"
 		},
 		{
@@ -31,8 +36,9 @@
 			"name": "Sandor Clegane",
 			"shortCode": "the-hound",
 			"actor": "Rory McCann",
-			// "house": "Clegane",
+			"house": "Clegane",
 			"location": false
 		}
 	]
+
 }

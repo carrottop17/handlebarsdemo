@@ -15,8 +15,14 @@
 		<li class="character">
 			<img src="images/{{shortCode}}.jpg" alt="">
 			<h2>{{@index}} {{@first}} {{name}}</h2>
+			{{formatName name house.seat}}
+			<p>{{formatPhoneNumber house.phone}}</p>
 			<p>Actor: {{actor}}</p>
-			<p>House: {{house}}</p>
+			{{#with house}}
+			<p>House Name: {{name}}</p>
+			<p>Seat: {{seat}}</p>
+			<p>Words: {{words}}</p>
+			{{/with}}
 			{{#if location}}<p>Whereabouts: {{location}}</p>{{/if}}
 			{{#unless location}}<p>Whereabouts are unknown...</p>{{/unless}}
 		</li>
